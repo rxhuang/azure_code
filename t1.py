@@ -22,7 +22,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(out)
     else:
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully without params",
+             "No params",
              status_code=200
         )
 
