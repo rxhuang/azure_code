@@ -22,14 +22,15 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(out)
     else:
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+             "This HTTP triggered function executed successfully without params",
              status_code=200
         )
 
-def fib (n):  
-    arr = [0,1]
 
-    for i in range (n-1):
+def fib(n):
+    arr = [0, 1]
+
+    for i in range(n-1):
         arr += [arr[-1] + arr[-2]]
 
     return arr[-1]
